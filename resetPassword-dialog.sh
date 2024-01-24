@@ -52,6 +52,8 @@ textFieldLabel="Enter New Password"
 textFieldLabel2="Re-Enter New Password"
 textFieldLabel3="Enter user's current Password"
 
+sudo pwpolicy -u $selectedOption -setpolicy "newPasswordRequired=0"
+
 while true; do
     # Prompt user for password
     current_password=$("$dialogPath" \
